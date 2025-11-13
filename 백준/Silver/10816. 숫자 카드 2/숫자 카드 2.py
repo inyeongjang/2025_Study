@@ -6,6 +6,7 @@ N_list = list(map(int, input().split()))
 
 count_dict = {}
 
+# dict.get(key, default) 
 # n이 처음 나오면 0, 이미 있으면 기존 개수 +1 
 for n in N_list:
     count_dict[n] = count_dict.get(n, 0) + 1

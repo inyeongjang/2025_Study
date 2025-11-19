@@ -13,24 +13,22 @@ public class Main {
         else if (N == 4) {
             System.out.println(-1);
         }
+        else if (N % 5 == 0) {
+            System.out.println(N / 5);
+        }
         else {
-            if (N % 5 == 0) {
-                System.out.println(N / 5);
+            int num = N / 5; 
+            for (int i = num; i > 0; i--) {
+                if ((N - 5 * i) % 3 == 0) {
+                    System.out.println(i + (N - 5 * i) / 3);
+                    return; 
+                }
+            }
+            if (N % 3 == 0) {
+                System.out.println(N / 3);
             }
             else {
-                int num = N / 5; 
-                for (int i = num; i > 0; i--) {
-                    if ((N - 5 * i) % 3 == 0) {
-                        System.out.println(i + (N - 5 * i) / 3);
-                        return; 
-                    }
-                }
-                if (N % 3 == 0) {
-                    System.out.println(N / 3);
-                }
-                else {
-                    System.out.println(-1);
-                }
+                System.out.println(-1);
             }
         }
     }

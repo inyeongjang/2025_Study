@@ -11,4 +11,4 @@ for alphabet in S:
     H += hash_dict[alphabet] * 31 ** i
     i += 1
 
-print(H)
+print(H % 1234567891)

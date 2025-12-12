@@ -23,6 +23,13 @@ bw.write(sb.toString());
 bw.flush();
 ```
 
+| 자료구조                | 크기 구하는 방법      |
+| ------------------- | -------------- |
+| **배열 (Array)**      | `arr.length`   |
+| **문자열 (String)**    | `str.length()` |
+| **리스트 (List)**      | `list.size()`  |
+| **Map (HashMap 등)** | `map.size()`   |
+
 ### 2. 배열 & 리스트
 
 ```java
@@ -35,6 +42,7 @@ list.add(10);
 list.get(0);   // 10
 list.size();   // 1
 ```
+
 
 ### 3. 문자열 다루기
 
@@ -69,6 +77,8 @@ set.add(10);
 set.add(10);   // 무시됨
 set.contains(10); // true
 ```
+
+
 
 ### 5. 정렬
 
